@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="shortcut icon" href="./res/icon.png" type="image/x-icon">
+    <title>Diagnosys-Planes</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <header class="heroP">
+        <nav class="nav_container container">
+            <div class="nav_logo">
+                <h1>Diagnosys</h1>
+            </div>
+            
+            <ul class="nav_links nav_links--menu">
+                <li class="nav_items">
+                    <a href="index.html" class="nav_link">Inicio</a>
+                </li>
+                <li class="nav_items">
+                    <a href="Diagnosys.html" class="nav_link">Acerca</a>
+                </li>
+                <li class="nav_items">
+                    <a href="Planes.html" class="nav_link">Planes</a>
+                </li>
+                <li class="nav_items">
+                    <a href="Equipo.html" class="nav_link">Equipo</a>
+                </li>
+            </ul>
+
+        </nav>
+
+        <section class="price container">
+            <div class="price_table">
+
+                <div class="price_element">
+                    <p class="price_name">Free</p>
+                    <h3 class="price_price">0$</h3>
+                    <div class="price_items">
+                        <p class="price_features">2 Analisis por mes</p>
+                        <p class="price_features">Informe con diagnostico basico</p>
+                        <p class="price_features">Soporte tecnico via email</p>
+                    </div>
+                    <button id="btn-free" onclick="plan_free()"><a href="#" class="price_cta">Suscribirse</a></button>
+                </div>
+
+                <div class="price_element price_element--better">
+                    <p class="price_name">Basico</p>
+                    <h3 class="price_price">1000$ /m</h3>
+                    <div class="price_items">
+                        <p class="price_features">80 analisis por mes</p>
+                        <p class="price_features">Informe con diagnostico y </p>
+                        <p class="price_features">recomendaciones</p>
+                        <p class="price_features">Soporte tecnico personal 24/7</p>
+                    </div>
+                    <button onclick="plan_basico()"><a href="#" class="price_cta" >Suscribirse</a></button>
+                </div>
+
+                <div class="price_element price_element--better-better">
+                    <p class="price_name">Plus++</p>
+                    <h3 class="price_price">2500$ /m</h3>
+                    <div class="price_items">
+                        <p class="price_features">150 Analisis por mes</p>
+                        <p class="price_features">Informe con diagnostico y </p>
+                        <p class="price_features">recomendaciones y seguimiento</p>
+                        <p class="price_features">Soporte tecnico via personal</p>
+                        <p class="price_features">Soporte tecnico/medico on-line 24/7</p>
+                    </div>
+                    <button onclick="plan_plus()"><a href="#" class="price_cta">Suscribirse</a></button>
+                </div>
+
+                <div class="price_element price_element--best">
+                    <p class="price_name">Ilimitado</p>
+                    <h3 class="price_price">5000$/m</h3>
+                    <div class="price_items">
+                        <p class="price_features">Analisis ilimitado de tomografias</p>
+                        <p class="price_features">Informe con diagnostico Detallado Especializado</p>
+                        <p class="price_features">sumado a una asesoria media personalizada</p>
+                        <p class="price_features">Soporte tecnico/medico online 24/7</p>
+                        <p class="price_features">Suscripcion a alianza medica corporativa</p>
+                    </div>
+                    <button onclick="plan_Ilimitado()"><a href="#" class="price_cta">Suscribirse</a></button>
+                </div>
+            </div>
+
+        </section>
+
+
+
+        <script src="/js/button.js"></script>
+</body>
+</html>
